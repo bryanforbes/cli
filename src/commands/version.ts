@@ -125,7 +125,7 @@ function createOutput(myPackageDetails: PackageDetails, commandVersions: ModuleV
 function register(options: OptionsHelper): void {
 	options('o', {
 		alias: 'outdated',
-		describe: 'Output a list of installed commands and check if any can be updated to a more recent stable version.',
+		describe: 'output a list of installed commands and check if any can be updated to a more recent stable version',
 		demand: false,
 		type: 'boolean'
 	});
@@ -234,7 +234,7 @@ function run(helper: Helper, args: VersionArgs): Promise<any> {
 export default {
 	name: '',
 	group: 'version',
-	description: 'provides version information for all installed commands and the cli itself.',
+	description: 'Print version information for the cli and all installed commands.',
 	register,
 	run
 };

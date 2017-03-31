@@ -96,7 +96,7 @@ async function run(helper: Helper, args: EjectArgs): Promise<any> {
 export default {
 	name: '',
 	group: 'eject',
-	description: 'disconnect your project from dojo cli commands',
+	description: 'Disconnect your project from dojo cli commands.',
 	register,
 	run
 };

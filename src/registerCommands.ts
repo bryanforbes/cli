@@ -159,7 +159,7 @@ export default function(yargs: Yargs, commandsMap: CommandsMap, yargsCommandName
 	yargs.demand(1, '')
 		.usage(helpUsage)
 		.epilog(helpEpilog)
-		.help('h')
+		.help('h', 'Show help.')
 		.alias('h', 'help')
 		.strict()
 		.argv;
